@@ -22,7 +22,7 @@
         <!-- CORE DEPENDENCIES -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
+            <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
             <scope>compile</scope>
         </dependency>
