@@ -6,14 +6,14 @@
     <groupId>solin</groupId>
     <artifactId>spring-demo</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>0.1</version>
     <name>spring-demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>5.1.5.RELEASE</spring.version>
+        <spring.version>4.3.27.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
         <logger.version>1.2.3</logger.version>
         <java.version>1.8</java.version>
@@ -23,18 +23,22 @@
         <!-- Spring Framework -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!--  SLF4J with Logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logger.version}</version>
         </dependency>
-
         <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
