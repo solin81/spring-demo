@@ -8,6 +8,7 @@
     <packaging>jar</packaging>
     <version>0.1</version>
     <name>spring-demo</name>
+	<!-- comment -->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
